@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hospital System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+            <h1>Hospital System</h1>
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Patients</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="form-section">
+
+            <h2>Add Patient</h2>
+
+            <form id="patientForm">
+
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" required>
+
+
+                <label for="password">Password</label>
+                <input type="password" id="password" required>
+
+
+                <label for="dateOfBirth">Date of Birth</label>
+                <input type="date" id="dateOfBirth" required>
+
+
+                <label>Gender</label>
+
+                <div class="gender">
+
+                    <input type="radio" id="male" name="gender" value="Male" required>
+                    <label for="male">Male</label>
+
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label>
+
+                </div>
+
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" required>
+
+
+                <label for="disease">Chronic Disease</label>
+
+                <select id="disease" required>
+                    <option value="">Choose a disease</option>
+                    <option value="Heart Disease">Heart Disease</option>
+                    <option value="Hypertension">Hypertension</option>
+                    <option value="Asthma">Asthma</option>
+                    <option value="Cancer">Cancer</option>
+                    <option value="No">No</option>
+                </select>
+
+
+                <label for="image">Image URL</label>
+                <input type="url" id="image" required>
+
+
+                <button type="submit">Add Patient</button>
+
+            </form>
+
+        </section>
+
+
+        <section class="patients-section">
+
+            <h2>Patients</h2>
+
+            <div id="patientsContainer">
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>&copy; 2026 Hospital System. All Rights Reserved.</p>
+    </footer>
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
